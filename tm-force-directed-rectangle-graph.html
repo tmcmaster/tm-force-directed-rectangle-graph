@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="tm-force-directed-rectangle-graph">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `tm-force-directed-rectangle-graph`
+     * D3 Force directed graph with ellipse nodes
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class TmForceDirectedRectangleGraph extends Polymer.Element {
+      static get is() { return 'tm-force-directed-rectangle-graph'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'tm-force-directed-rectangle-graph'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(TmForceDirectedRectangleGraph.is, TmForceDirectedRectangleGraph);
+  </script>
+</dom-module>
